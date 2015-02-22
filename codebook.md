@@ -109,8 +109,8 @@ The code is linear, without loops.  It is heavily commented.  No attempt has bee
 - Coerce the features descriptive variable to character (from level) 
 - Since the features contain characters illegal for variable names, clean up the text, removing "-", "(",")", and "," from each value.
 - Add a variable to the **xfeatures** data frame to identify each row as "mean", "std" or "other."
-- Build a subset, **keepFeat** of the features dataframe containing only the rows identified as "mean" or "other"
-- Rename the measures columns of the **xdata** data frame.
+- Build a subset(**keepFeat**) of the **xfeatures** dataframe containing only the rows identified as "mean" or "other"
+- Rename the measures columns of the **xdata** data frame using **xfeatures**.
 - Rebuild **xdata**, retaining subject, activity, and the meausures with labels matching measures in **keepFeat**.
 - Replace the activity numeric values in **xdata** with their text labels as given in activity_labels.txt.
 - Use aggregate to summarize the means of all the measures in a "wide form" tidy data set
