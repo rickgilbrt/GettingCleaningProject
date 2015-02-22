@@ -82,9 +82,6 @@ names(xdata) <- c("subject","activity",xfeatures$V2)
 ## Now subset the xdata set using keepFeat$V2 to keep only the mean and std cols
 xdata <- data.frame(xdata[,1:2],xdata[,names(xdata) %in% keepFeat$V2])
 
-## The features labels contain characters not recognized in variable names
-## We'll fix those and apply them to xdata
-
 ## now replace the activity numeric values with activity names
 activitynames <- read.csv(actlblfile,sep =" ", header = FALSE)
 
