@@ -10,7 +10,7 @@ The experiments were carried out with a group of 30 volunteers within an age bra
 
 The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain.
 
-## For This Project
+## The Processing For This Project
 
 ### Extraction
 Filenames used were associated with **chr** vectors as follows:
@@ -24,10 +24,9 @@ testsubjfile <- "UCI HAR Dataset/test/subject_test.txt"    ## subject codes for 
 actlblfile <- "UCI HAR Dataset/activity_labels.txt"        ## descriptive names for each of the six activity codes
 featuresfile <- "UCI HAR Dataset/features.txt"             ## descriptive names for each of 561 measurement features
 ```
-
 Data were read into R using read.csv
 #### dataframes
-- **xtraindata** and  **xtestdata**  X_train.txt data and X_test.txt data
+- **xtraindata** and  **xtestdata**  loaded from x_test.txt and x_train.txt.  
 - **tmp**                used twice to load the activity label column to xteat and xtrain
 ```
  	V1
@@ -42,7 +41,7 @@ Data were read into R using read.csv
 9	5
 10	5
 ```
-- **xtest** and **xtrain**  loaded from the test subject file and the training subject file 
+- **xtest** and **xtrain**  loriginally loaded from X_train.txt data and X_test.txt and contain the encoded subject id's (1-30).  In a subsequent step, activity id's(1-6) and the xtest and xtrain columnse are added as columns to these two dataframes. 
 ```
   subject activity        V1          V2          V3
 1        2        5 0.2571778 -0.02328523 -0.01465376
@@ -83,7 +82,7 @@ Data were read into R using read.csv
 7	41	41	tGravityAccmeanX	mean
 8	42	42	tGravityAccmeanY	mean
 ```
-- **xdata** and **tidyset** have the same structure
+- **xdata** and **tidyset** have the same structure.  xdata contains the extracted values from the data source.  Tidyset contains the average for each measure/feature, grouped by subject and activity using the aggregate function.
 ```
  	subject	activity	tBodyAccmeanX	tBodyAccmeanY	tBodyAccmeanZ
 1	1	LAYING	0.2215982	-0.04051395	-0.1132036
@@ -97,3 +96,5 @@ Data were read into R using read.csv
 9	9	LAYING	0.2591955	-0.02052682	-0.1075497
 10	10	LAYING	0.2802306	-0.02429448	-0.1171686
 ```
+
+The measures (tBodyAccmeanX, etc.) in the original data set are all normalized unitless values.
