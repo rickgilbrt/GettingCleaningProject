@@ -3,6 +3,12 @@ Rick Gilbert
 
 ## Overview
 This codebook describes the variables associated with a "tidy data set" class project based on the **Human Activity Recognition Using Smartphones Data Set** in the UCI Machine Learning repository.  For more information not described here and links to the data used in the repository,  please see the links in the **README.md** file that is part of this class project repo.
+The assignment that this script is designed to complete is as follows:
+- 1 Merge the training and the test sets to create one data set.
+- 2 Extract only the measurements on the mean and standard deviation for each measurement. 
+- 3 Use descriptive activity names to name the activities in the data set
+- 4 Appropriately label the data set with descriptive variable names. 
+- 5 From the data set in step 4, create a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ## Original Data 
 (from the repo web site, http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones)
