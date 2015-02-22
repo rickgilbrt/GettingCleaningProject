@@ -73,9 +73,9 @@ b[1:20,1:5]
 19      19   LAYING     0.2726537   -0.01714269   -0.10898146
 20      20   LAYING     0.2395079   -0.01444063   -0.10427432
 ```
-## License:
+### License:
 ========
-Use of this dataset in publications must be acknowledged by referencing the following publication [1] 
+Use of the dataset in publications must be acknowledged by referencing the following publication [1] 
 
 [1] Davide Anguita, Alessandro Ghio, Luca Oneto, Xavier Parra and Jorge L. Reyes-Ortiz. Human Activity Recognition on Smartphones using a Multiclass Hardware-Friendly Support Vector Machine. International Workshop of Ambient Assisted Living (IWAAL 2012). Vitoria-Gasteiz, Spain. Dec 2012
 
