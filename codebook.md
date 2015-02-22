@@ -22,8 +22,9 @@ testsubjfile <- "UCI HAR Dataset/test/subject_test.txt"    ## subject codes for 
 actlblfile <- "UCI HAR Dataset/activity_labels.txt"        ## descriptive names for each of the six activity codes
 featuresfile <- "UCI HAR Dataset/features.txt"             ## descriptive names for each of 561 measurement features
 ```
-Data were read into R using read.csv
+
 #### dataframes
+Data were read into R using read.csv
 - **xtraindata** and  **xtestdata**  loaded from x_test.txt and x_train.txt.  
 - **tmp**                used twice to load the activity label column to xteat and xtrain
 ```
