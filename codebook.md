@@ -101,7 +101,7 @@ The measures (tBodyAccmeanX, etc.) in the original data set are all normalized u
 The code is linear, without loops.  It is heavily commented.  No attempt has been made to optimize the code for speed.  The process in the code is as follows:
 - Set up some file name variables.
 - Read in the training measures data and the test measures data.
-- Apply the subject and activity vectors to each of the measures data frames to label the rows.
+- Apply the subject and activity vectors to each of the measures data frames in order to label the rows.
 - Add variable labels for the subject and activity columns
 - Join the rows of the test and training data frames into a single data frame, **xdata**.
 - Read the features.txt file into a data frame, **xfeatures** (these identify the measures in the data)
