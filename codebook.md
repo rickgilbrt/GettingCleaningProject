@@ -114,8 +114,8 @@ The code is linear, without loops.  It is heavily commented.  No attempt has bee
 - Read the features.txt file into a data frame, **xfeatures** (these identify the measures in the data)
 - Coerce the features descriptive variable to character (from level) 
 - Since the features contain characters illegal for variable names, clean up the text, removing "-", "(",")", and "," from each value.
-- Add a variable to the **xfeatures** data frame to identify each row as "mean", "std" or "other."
-- Build a subset(**keepFeat**) of the **xfeatures** dataframe containing only the rows identified as "mean" or "other"
+- Add a variable to the **xfeatures** data frame to identify each row as "mean", "std" or "other." Note that there was some uncertainty in which features/measures should be retained as "mean" measures. For this exercise, features whose name included the lower case text "mean" were labeled as "mean."
+- Build a subset(**keepFeat**) of the **xfeatures** dataframe containing only the rows identified as "mean" or "std".  
 - Rename the measures columns of the **xdata** data frame using **xfeatures**.
 - Rebuild **xdata**, retaining subject, activity, and the meausures with labels matching measures in **keepFeat**.
 - Replace the activity numeric values in **xdata** with their text labels as given in activity_labels.txt.
